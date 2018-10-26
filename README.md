@@ -19,7 +19,7 @@ This basic webpage takes a name and number from a user and returns a range of nu
 * Program replaces any number containing 0 with "Beep!"
   * Example input: 20
   * Example output: ["Beep!", "Boop!", 2, "I'm sorry Dave. I'm afraid I can't do that.", 4, 5, "I'm sorry Dave. I'm afraid I can't do that.", 7, 8, "I'm sorry Dave. I'm afraid I can't do that.", "Boop!", "Boop!", "I'm sorry Dave. I'm afraid I can't do that.", "Boop!", "Boop!", "I'm sorry Dave. I'm afraid I can't do that.", "Boop!", "Boop!", "I'm sorry Dave. I'm afraid I can't do that.", "Boop!", "Beep!"]
-* Program replaces any number containing 1 with "Beep!" This condition trumps numbers containing.
+* Program replaces any number containing 1 with "Beep!" This condition trumps numbers containing 0.
   * Example input: 11
   * Example output: ["Beep!", "Boop!", 2, "I'm sorry Dave. I'm afraid I can't do that.", 4, 5, "I'm sorry Dave. I'm afraid I can't do that.", 7, 8, "I'm sorry Dave. I'm afraid I can't do that.", "Boop!", "Boop!"]
   * Example input: 10
