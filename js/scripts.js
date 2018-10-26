@@ -18,18 +18,18 @@ function createNumberList(number, name) {
   return numberList;
 }
 
-function generateColor(){
+function generateColor() {
   var red = randomNumber();
   var green = randomNumber();
   var blue = randomNumber();
-  function randomNumber(){
+  function randomNumber() {
     return Math.floor(Math.random()*255 +1)
   }
   return "rgb(" + red + "," + green + "," + blue +")"
 }
 
 // User Interface Logic
-$(document).ready(function(){
+$(document).ready(function() {
   $("#beepBoop").submit(function(event) {
     event.preventDefault();
     var name = $("input#name").val();
@@ -45,7 +45,7 @@ $(document).ready(function(){
         $(".helpBlock1").show();
         $(".nameInput").addClass("error");
       }
-      if (!number){
+      if (!number) {
         $(".helpBlock2").show();
         $("#numberInput").addClass("error");
       }
@@ -56,12 +56,19 @@ $(document).ready(function(){
       });
     }
 
-    $("#reverseOrder").click(function(){
+    $("#reverseOrder").click(function() {
       $("#resultsList").empty();
       var reversedResults = results.reverse();
       reversedResults.forEach(function(reversedResult) {
         $("#resultsList").append("<li>" + reversedResult + "</li>");
       });
-    })
+    });
+
+    $("#changeTheme").click(function() {
+      console.log("this?");
+      // var color = generateColor();
+      // $(".container").css("background-color", "green");
+    });
+
   });
 });

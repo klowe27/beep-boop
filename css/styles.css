@@ -65,3 +65,18 @@ button:hover {
 img {
   width: 30%;
 }
+
+div.theme {
+  background-color: #F5F5F5;
+  padding: 20px 40px 40px 40px;
+  margin-top: 40px;
+}
+
+button#changeTheme {
+  margin-left: 30px;
+  background-color: #696969;
+}
+
+.theme p {
+  float: left;
+}
