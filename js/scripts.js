@@ -23,10 +23,20 @@ $(document).ready(function(){
     var name = $("input#name").val();
     var number = parseInt($("input#number").val());
     var results = createNumberList(number, name);
+
     $("#results").show();
     $("#resultsList").empty();
+
     results.forEach(function(result) {
       $("#resultsList").append("<li>" + result + "</li>");
     });
+
+    $("#reverseOrder").click(function(){
+      $("#resultsList").empty();
+      var reversedResults = results.reverse();
+      reversedResults.forEach(function(reversedResult) {
+        $("#resultsList").append("<li>" + reversedResult + "</li>");
+      });
+    })
   });
 });
