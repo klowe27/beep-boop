@@ -2,14 +2,14 @@
 function createNumberList(number, name) {
   var numberList = [];
   for (var i = 0; i <= number; i++) {
-    var numbersInList = (i.toString()).split("");
+    var numberInList = (i.toString()).split("");
     if (i % 3 === 0 && i !== 0) {
       numberList.push("I'm sorry, " + name + ". I'm afraid I can't do that.")
-    } else if (numbersInList.includes("1")) {
+    } else if (numberInList.includes("1")) {
       numberList.push("Boop!")
-    } else if (numbersInList.includes("0")) {
+    } else if (numberInList.includes("0")) {
       numberList.push("Beep!");
-    } else if (numbersInList.includes("8")) {
+    } else if (numberInList.includes("8")) {
       numberList.push("<img src='img/autumn.jpg'>")
     } else {
       numberList.push("<span style='color:" + generateColor() + "'>" + i + "</span>");
@@ -22,10 +22,11 @@ function generateColor() {
   var red = randomNumber();
   var green = randomNumber();
   var blue = randomNumber();
-  function randomNumber() {
-    return Math.floor(Math.random()*255 +1)
-  }
   return "rgb(" + red + "," + green + "," + blue +")"
+}
+
+function randomNumber() {
+  return Math.floor(Math.random()*255 +1)
 }
 
 // User Interface Logic
@@ -67,7 +68,6 @@ $(document).ready(function() {
 
   $("#changeTheme").click(function() {
     var color = generateColor();
-    var color2 = generateColor();
     $("h1").css("background-color", color);
     $(".formButton").css("background-color", color);
     $("label").css("color", color);
