@@ -19,14 +19,14 @@ function createNumberList(number, name) {
 }
 
 function generateColor() {
-  var red = randomNumber();
-  var green = randomNumber();
-  var blue = randomNumber();
+  var red = randomNumber(255);
+  var green = randomNumber(255);
+  var blue = randomNumber(255);
   return "rgb(" + red + "," + green + "," + blue +")"
 }
 
-function randomNumber() {
-  return Math.floor(Math.random()*255 +1)
+function randomNumber(number) {
+  return Math.floor(Math.random()*number +1)
 }
 
 // User Interface Logic
@@ -40,6 +40,7 @@ $(document).ready(function() {
     $("#resultsList").empty();
     $(".helpBlock").hide();
     $(".error").removeClass("error");
+    $(".name").text(name);
 
     if (!name || !number) {
       if (!name) {
