@@ -16,6 +16,16 @@ function createNumberList(number, name) {
   return numberList;
 }
 
+function generateColor(){
+  var red = randomNumber();
+  var green = randomNumber();
+  var blue = randomNumber();
+  function randomNumber(){
+    return Math.floor(Math.random()*255 +1)
+  }
+  return "rgb(" + red + "," + green + "," + blue +")"
+}
+
 // User Interface Logic
 $(document).ready(function(){
   $("#beepBoop").submit(function(event) {
