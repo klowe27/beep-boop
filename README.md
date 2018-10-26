@@ -18,20 +18,20 @@ This basic webpage takes a name and number from a user and returns a range of nu
   * Example output: ["Beep!", "Boop!"]
 * Program replaces any number containing 0 with "Beep!"
   * Example input: 20
-  * Example output: ["Beep!", "Boop!", 2, "I'm sorry Dave. I'm afraid I can't do that.", 4, 5, "I'm sorry Dave. I'm afraid I can't do that.", 7, 8, "I'm sorry Dave. I'm afraid I can't do that.", "Boop!", "Boop!", "I'm sorry Dave. I'm afraid I can't do that.", "Boop!", "Boop!", "I'm sorry Dave. I'm afraid I can't do that.", "Boop!", "Boop!", "I'm sorry Dave. I'm afraid I can't do that.", "Boop!", "Beep!"]
+  * Example output: ["Beep!", "Boop!", 2, "I'm sorry, Dave. I'm afraid I can't do that.", 4, 5, "I'm sorry, Dave. I'm afraid I can't do that.", 7, 8, "I'm sorry, Dave. I'm afraid I can't do that.", "Boop!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that.", "Boop!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that.", "Boop!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that.", "Boop!", "Beep!"]
 * Program replaces any number containing 1 with "Beep!" This condition trumps numbers containing 0.
   * Example input: 11
-  * Example output: ["Beep!", "Boop!", 2, "I'm sorry Dave. I'm afraid I can't do that.", 4, 5, "I'm sorry Dave. I'm afraid I can't do that.", 7, 8, "I'm sorry Dave. I'm afraid I can't do that.", "Boop!", "Boop!"]
+  * Example output: ["Beep!", "Boop!", 2, "I'm sorry, Dave. I'm afraid I can't do that.", 4, 5, "I'm sorry, Dave. I'm afraid I can't do that.", 7, 8, "I'm sorry, Dave. I'm afraid I can't do that.", "Boop!", "Boop!"]
   * Example input: 10
   * Example output: [ . . . "Boop!"]
 * Program replaces numbers divisible by 3 with "I'm sorry, Dave. I'm afraid I can't do that." The name "Dave" is replaced with the user's name. This conditions trumps all others.
   * Example input: 3
-  * Example output: ["Beep!", "Boop!", "2", "I'm sorry Dave. I'm afraid I can't do that."]
+  * Example output: ["Beep!", "Boop!", "2", "I'm sorry, Dave. I'm afraid I can't do that."]
   * Example input: 30
-  * Example output: [ . . . "I'm sorry Dave. I'm afraid I can't do that"]
+  * Example output: [ . . . "I'm sorry, Dave. I'm afraid I can't do that"]
 * Program assigns a random color to all remaining numbers in list.
-  * Example input: 3
-  * Example output: ["Beep!", "Boop!", 2] and 2 is assigned a random color. 
+  * Example input: 2
+  * Example output: ["Beep!", "Boop!", 2] and 2 is assigned a random color.
 
 ## Setup/Installation Requirements
 
