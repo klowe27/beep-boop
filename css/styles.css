@@ -21,28 +21,13 @@ h2 {
   font-weight: 300;
 }
 
+.form-group {
+  padding-bottom: 10px;
+}
+
 label {
   font-weight: 400;
   color: #009ACD;
-}
-
-button.formButton {
-  color: white;
-  background-color: #009ACD;
-  padding: 10px 15px;
-  border: none;
-  text-decoration: none;
-}
-
-button.formButton:hover {
-  background-color:#CD3700;
-}
-
-#results {
-  display: none;
-  background-color: #F5F5F5;
-  padding: 20px 40px 40px 40px;
-  margin-top: 20px;
 }
 
 .helpBlock {
@@ -51,15 +36,30 @@ button.formButton:hover {
   font-style: italic;
 }
 
-.form-group {
-  padding-bottom: 10px;
-}
-
 .error {
   background-color: #F5F5F5;
   margin-left: -30px;
   margin-right: -30px;
   padding: 15px 30px 15px 30px;
+}
+
+button {
+  color: white;
+  background-color: #009ACD;
+  padding: 10px 15px;
+  border: none;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #018CAD;
+}
+
+#results {
+  display: none;
+  background-color: #F5F5F5;
+  padding: 20px 40px 40px 40px;
+  margin-top: 20px;
 }
 
 img {
