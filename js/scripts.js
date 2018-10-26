@@ -24,12 +24,25 @@ $(document).ready(function(){
     var number = parseInt($("input#number").val());
     var results = createNumberList(number, name);
 
-    $("#results").show();
     $("#resultsList").empty();
+    $(".helpBlock").hide();
+    $(".error").removeClass("error");
 
-    results.forEach(function(result) {
-      $("#resultsList").append("<li>" + result + "</li>");
-    });
+    if (!name || !number) {
+      if (!name) {
+        $(".helpBlock1").show();
+        $(".nameInput").addClass("error");
+      }
+      if (!number){
+        $(".helpBlock2").show();
+        $("#numberInput").addClass("error");
+      }
+    } else {
+      $("#results").show();
+      results.forEach(function(result) {
+        $("#resultsList").append("<li>" + result + "</li>");
+      });
+    }
 
     $("#reverseOrder").click(function(){
       $("#resultsList").empty();
