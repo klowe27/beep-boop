@@ -16,10 +16,13 @@ This basic webpage takes a name and number from a user and returns a range of nu
 * Program replaces 1 with "Boop!"
   * Example input: 1
   * Example output: ["Beep!", "Boop!"]
-* Program replaces any number containing 0 with "Beep!"
+* Program replaces any number containing 8 with an image.
+  * Example input: 8
+  * Example output: ["Beep!", "Boop!", 2, "I'm sorry, Dave. I'm afraid I can't do that.", 4, 5, "I'm sorry, Dave. I'm afraid I can't do that.", 7, "<img src='img/autumn.jpg'>"]
+* Program replaces any number containing 0 with "Beep!" This condition trumps numbers containing 8.
   * Example input: 20
   * Example output: ["Beep!", "Boop!", 2, "I'm sorry, Dave. I'm afraid I can't do that.", 4, 5, "I'm sorry, Dave. I'm afraid I can't do that.", 7, 8, "I'm sorry, Dave. I'm afraid I can't do that.", "Boop!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that.", "Boop!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that.", "Boop!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that.", "Boop!", "Beep!"]
-* Program replaces any number containing 1 with "Beep!" This condition trumps numbers containing 0.
+* Program replaces any number containing 1 with "Beep!" This condition trumps numbers containing 0 and 8.
   * Example input: 11
   * Example output: ["Beep!", "Boop!", 2, "I'm sorry, Dave. I'm afraid I can't do that.", 4, 5, "I'm sorry, Dave. I'm afraid I can't do that.", 7, 8, "I'm sorry, Dave. I'm afraid I can't do that.", "Boop!", "Boop!"]
   * Example input: 10
