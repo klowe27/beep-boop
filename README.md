@@ -6,7 +6,7 @@
 
 ## Description
 
-This basic webpage takes a name and number from a user and returns a range of numbers from 0 to the number the user provided with a few exceptions.
+This basic webpage takes a name and number from a user and returns a range of numbers from 0 to the number the user provided with a few exceptions. Additionally, the user can change the color theme for the page.
 
 ## Specifications
 
@@ -22,16 +22,12 @@ This basic webpage takes a name and number from a user and returns a range of nu
 * Program replaces any number containing 0 with "Beep!" This condition trumps for numbers containing 8.
   * Example input: 20
   * Example output: ["Beep!", "Boop!", 2, "I'm sorry, Dave. I'm afraid I can't do that.", 4, 5, "I'm sorry, Dave. I'm afraid I can't do that.", 7, "<img src='img/autumn.jpg'>", "I'm sorry, Dave. I'm afraid I can't do that.", "Boop!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that.", "Boop!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that.", "Boop!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that.", "Boop!", "Beep!"]
-* Program replaces any number containing 1 with "Beep!" This condition trumps for numbers containing 0 and 8.
+* Program replaces any number containing 1 with "Boop!" This condition trumps for numbers containing 0 and 8.
   * Example input: 11
   * Example output: ["Beep!", "Boop!", 2, "I'm sorry, Dave. I'm afraid I can't do that.", 4, 5, "I'm sorry, Dave. I'm afraid I can't do that.", 7, "<img src='img/autumn.jpg'>", "I'm sorry, Dave. I'm afraid I can't do that.", "Boop!", "Boop!"]
-  * Example input: 10
-  * Example output: [ . . . "Boop!"]
 * Program replaces numbers divisible by 3 with "I'm sorry, Dave. I'm afraid I can't do that." The name "Dave" is replaced with the user's name. This conditions trumps all others.
   * Example input: 3
   * Example output: ["Beep!", "Boop!", "2", "I'm sorry, Dave. I'm afraid I can't do that."]
-  * Example input: 30
-  * Example output: [ . . . "I'm sorry, Dave. I'm afraid I can't do that"]
 * Program assigns a random color to all remaining numbers in list.
   * Example input: 2
   * Example output: ["Beep!", "Boop!", 2] and 2 is assigned a random color.
@@ -39,7 +35,7 @@ This basic webpage takes a name and number from a user and returns a range of nu
 ## Setup/Installation Requirements
 
 * View this project directly at: https://klowe27.github.io/beep-boop/
-* To clone this project, in the terminal use command $ git clone https://github.com/klowe27/beep-boop
+* To clone this project, in the terminal use command $ git clone https://github.com/klowe27/beep-boop/
 * Then, open index.html in any browser
 
 ## Known Bugs
