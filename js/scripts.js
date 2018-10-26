@@ -63,12 +63,13 @@ $(document).ready(function() {
         $("#resultsList").append("<li>" + reversedResult + "</li>");
       });
     });
+  });
 
-    $("#changeTheme").click(function() {
-      console.log("this?");
-      // var color = generateColor();
-      // $(".container").css("background-color", "green");
-    });
-
+  $("#changeTheme").click(function() {
+    var color = generateColor();
+    $("h1").css("background-color", color);
+    $("button").css("background-color", color);
+    $("label").css("color", color);
+    $("h2").css("color", color);
   });
 });
