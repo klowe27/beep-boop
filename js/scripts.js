@@ -23,8 +23,8 @@ $(document).ready(function(){
     var name = $("input#name").val();
     var number = parseInt($("input#number").val());
     var results = createNumberList(number, name);
-    console.log(results);
     $("#results").show();
+    $("#resultsList").empty();
     results.forEach(function(result) {
       $("#resultsList").append("<li>" + result + "</li>");
     });
