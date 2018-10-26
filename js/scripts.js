@@ -67,8 +67,9 @@ $(document).ready(function() {
 
   $("#changeTheme").click(function() {
     var color = generateColor();
+    var color2 = generateColor();
     $("h1").css("background-color", color);
-    $("button").css("background-color", color);
+    $(".formButton").css("background-color", color);
     $("label").css("color", color);
     $("h2").css("color", color);
   });

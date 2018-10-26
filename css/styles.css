@@ -26,7 +26,7 @@ label {
   color: #cc5500;
 }
 
-button {
+button.formButton {
   color: white;
   background-color: #cc5500;
   padding: 10px 15px;
@@ -34,7 +34,7 @@ button {
   text-decoration: none;
 }
 
-button:hover {
+button.formButton:hover {
   background-color:#CD3700;
 }
 
@@ -68,15 +68,20 @@ img {
 
 div.theme {
   background-color: #F5F5F5;
-  padding: 20px 40px 40px 40px;
+  padding: 20px;
   margin-top: 40px;
+  text-align: center;
 }
 
 button#changeTheme {
-  margin-left: 30px;
   background-color: #696969;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  text-decoration: none;
+  text-align: center;
 }
 
-.theme p {
-  float: left;
+button#changeTheme:hover {
+  background-color: #505050;
 }
