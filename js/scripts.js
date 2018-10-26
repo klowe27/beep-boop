@@ -1,6 +1,14 @@
 // Business Logic
-function createNumberList(number){
-  return number;
+function createNumberList(number) {
+  var numberList = [];
+  for (var i = 0; i <= number; i++) {
+    if (i === 0) {
+      numberList.push("Beep!");
+    } else {
+      numberList.push(i);
+    }
+  }
+  return numberList;
 }
 
 // User Interface Logic
