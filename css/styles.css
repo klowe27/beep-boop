@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-  background-color: #cc5500;
+  background-color: #009ACD;
   margin: -50px -50px 25px -50px;
   padding: 20px;
   color: white;
@@ -17,18 +17,18 @@ h1 {
 }
 
 h2 {
-  color: #cc5500;
+  color: #009ACD;
   font-weight: 300;
 }
 
 label {
   font-weight: 400;
-  color: #cc5500;
+  color: #009ACD;
 }
 
 button.formButton {
   color: white;
-  background-color: #cc5500;
+  background-color: #009ACD;
   padding: 10px 15px;
   border: none;
   text-decoration: none;
@@ -73,15 +73,16 @@ div.theme {
   text-align: center;
 }
 
-button#changeTheme {
+div.theme button {
   background-color: #696969;
   color: white;
   padding: 10px 15px;
   border: none;
   text-decoration: none;
   text-align: center;
+  margin: 3px;
 }
 
-button#changeTheme:hover {
+div.theme button:hover {
   background-color: #505050;
 }
