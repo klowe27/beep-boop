@@ -9,6 +9,8 @@ function createNumberList(number, name) {
       numberList.push("Boop!")
     } else if (numbersInList.includes("0")) {
       numberList.push("Beep!");
+    } else if (numbersInList.includes("8")) {
+      numberList.push("<img src='img/autumn.jpg'>")
     } else {
       numberList.push("<span style='color:" + generateColor() + "'>" + i + "</span>");
     }
