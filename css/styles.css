@@ -1,3 +1,49 @@
+body {
+  background-color: #F5F5F5;
+}
+
+.container {
+  padding: 40px;
+  background-color: white;
+}
+
+h1 {
+  background-color: #cc5500;
+  margin-top: -40px;
+  margin-left: -40px;
+  margin-right: -40px;
+  padding: 20px;
+  color: white;
+  font-weight: 200;
+  text-align: center;
+}
+
+h2 {
+  color: #cc5500;
+  font-weight: 200;
+}
+
+label {
+  font-weight: 300;
+  color: #cc5500;
+}
+
+button {
+  color: white;
+  background-color: #cc5500;
+  padding: 10px;
+}
+
+button:hover {
+  background-color:#CD3700;
+}
+
 #results {
   display: none;
+  background-color: #F5F5F5;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin-top: 20px;
 }
