@@ -2,11 +2,12 @@
 function createNumberList(number) {
   var numberList = [];
   for (var i = 0; i <= number; i++) {
+    var numbersInList = (i.toString()).split("");
     if (i % 3 === 0 && i !== 0) {
       numberList.push("I'm sorry [name]. I'm afraid I can't do that.")
-    } else if (i === 1) {
+    } else if (numbersInList.includes("1")) {
       numberList.push("Boop!")
-    } else if (i === 0) {
+    } else if (numbersInList.includes("0")) {
       numberList.push("Beep!");
     } else {
       numberList.push(i);
