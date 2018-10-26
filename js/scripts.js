@@ -2,7 +2,9 @@
 function createNumberList(number) {
   var numberList = [];
   for (var i = 0; i <= number; i++) {
-    if (i === 1) {
+    if (i % 3 === 0 && i !== 0) {
+      numberList.push("I'm sorry [name]. I'm afraid I can't do that.")
+    } else if (i === 1) {
       numberList.push("Boop!")
     } else if (i === 0) {
       numberList.push("Beep!");
