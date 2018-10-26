@@ -10,7 +10,7 @@ function createNumberList(number, name) {
     } else if (numbersInList.includes("0")) {
       numberList.push("Beep!");
     } else {
-      numberList.push(i);
+      numberList.push("<span style='color:" + generateColor() + "'>" + i + "</span>");
     }
   }
   return numberList;

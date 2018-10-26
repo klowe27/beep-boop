@@ -29,6 +29,9 @@ This basic webpage takes a name and number from a user and returns a range of nu
   * Example output: ["Beep!", "Boop!", "2", "I'm sorry Dave. I'm afraid I can't do that."]
   * Example input: 30
   * Example output: [ . . . "I'm sorry Dave. I'm afraid I can't do that"]
+* Program assigns a random color to all remaining numbers in list.
+  * Example input: 3
+  * Example output: ["Beep!", "Boop!", 2] and 2 is assigned a random color. 
 
 ## Setup/Installation Requirements
 
