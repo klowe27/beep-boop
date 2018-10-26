@@ -38,7 +38,7 @@ $(document).ready(function(){
         $("#numberInput").addClass("error");
       }
     } else {
-      $("#results").show();
+      $("#results").slideDown();
       results.forEach(function(result) {
         $("#resultsList").append("<li>" + result + "</li>");
       });
