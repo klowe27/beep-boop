@@ -19,13 +19,13 @@ This basic webpage takes a name and number from a user and returns a range of nu
 * Program replaces any number containing 8 with an image.
   * Example input: 8
   * Example output: ["Beep!", "Boop!", 2, "I'm sorry, Dave. I'm afraid I can't do that.", 4, 5, "I'm sorry, Dave. I'm afraid I can't do that.", 7, "<img src='img/autumn.jpg'>"]
-* Program replaces any number containing 0 with "Beep!" This condition trumps for numbers containing 8.
+* Program replaces any number containing 0 with "Beep!" This condition trumps for numbers also containing 8.
   * Example input: 20
   * Example output: ["Beep!", "Boop!", 2, "I'm sorry, Dave. I'm afraid I can't do that.", 4, 5, "I'm sorry, Dave. I'm afraid I can't do that.", 7, "<img src='img/autumn.jpg'>", "I'm sorry, Dave. I'm afraid I can't do that.", "Boop!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that.", "Boop!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that.", "Boop!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that.", "Boop!", "Beep!"]
-* Program replaces any number containing 1 with "Boop!" This condition trumps for numbers containing 0 and 8.
+* Program replaces any number containing 1 with "Boop!" This condition trumps for numbers also containing 0 or 8.
   * Example input: 11
   * Example output: ["Beep!", "Boop!", 2, "I'm sorry, Dave. I'm afraid I can't do that.", 4, 5, "I'm sorry, Dave. I'm afraid I can't do that.", 7, "<img src='img/autumn.jpg'>", "I'm sorry, Dave. I'm afraid I can't do that.", "Boop!", "Boop!"]
-* Program replaces numbers divisible by 3 with "I'm sorry, Dave. I'm afraid I can't do that." The name "Dave" is replaced with the user's name. This conditions trumps all others.
+* Program replaces numbers divisible by 3 with "I'm sorry, Dave. I'm afraid I can't do that." The name "Dave" is replaced with the user's name. This condition trumps all others.
   * Example input: 3
   * Example output: ["Beep!", "Boop!", "2", "I'm sorry, Dave. I'm afraid I can't do that."]
 * Program assigns a random color to all remaining numbers in list.
